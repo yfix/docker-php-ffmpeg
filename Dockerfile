@@ -18,5 +18,3 @@ RUN echo "deb http://ppa.launchpad.net/mc3man/trusty-media/ubuntu trusty main" >
   && rm -rf /var/lib/apt/lists/*
 
 COPY docker /
-
-EXPOSE 80
