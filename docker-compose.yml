@@ -6,6 +6,6 @@ php:
     - 8881:80
   restart: always
   volumes:
-    - ./container-files/etc/supervisor/conf.d/php-ffmpeg.conf:/etc/supervisor/conf.d/php-ffmpeg.conf
-    - ./container-files/var/log/supervisor:/var/log/supervisor
-    - ./container-files/var/www:/var/www
+    - ./docker/etc/supervisor/conf.d/php-ffmpeg.conf:/etc/supervisor/conf.d/php-ffmpeg.conf
+    - ./docker/var/log/supervisor:/var/log/supervisor
+    - ./docker/var/www:/var/www
