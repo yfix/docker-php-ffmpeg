@@ -1,4 +1,4 @@
-FROM yfix/php:7
+FROM yfix/php
 
 RUN echo "deb http://ppa.launchpad.net/mc3man/trusty-media/ubuntu trusty main" > /etc/apt/sources.list.d/mc3man-trusty-media-trusty.list \
   && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ED8E640A \
