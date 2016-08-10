@@ -1,11 +1,13 @@
-php:
-#  image: yfix/php-ffmpeg
-  build: .
-  container_name: yfix_test_php_ffmpeg
-  ports:
-    - 8881:80
-  restart: always
-  volumes:
-    - ./docker/etc/supervisor/conf.d/php-ffmpeg.conf:/etc/supervisor/conf.d/php-ffmpeg.conf
-    - ./docker/var/log/supervisor:/var/log/supervisor
-    - ./docker/var/www:/var/www
+version: '2'
+services:
+  php:
+#    image: yfix/php-ffmpeg
+    build: .
+    container_name: yfix_test_php_ffmpeg
+    ports:
+      - 8881:80
+    restart: always
+    volumes:
+      - ./docker/etc/supervisor/conf.d/php-ffmpeg.conf:/etc/supervisor/conf.d/php-ffmpeg.conf
+      - ./docker/var/log/supervisor:/var/log/supervisor
+      - ./docker/var/www:/var/www
